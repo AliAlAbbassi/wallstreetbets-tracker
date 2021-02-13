@@ -1,0 +1,21 @@
+<nb-card [size]="'medium'">
+  <nb-card-header>Trending Stocks</nb-card-header>
+  <nb-card-body>
+    <nb-list>
+      <nb-list-item style="padding-top: 0; padding-bottom: 0;" class="grid">
+        <p>Symbol</p>
+        <p>Mentions</p>
+      </nb-list-item>
+      <nb-list-item *ngFor="let mention of topMentions">
+        <div class="grid">
+          <div>
+            {{ mention.symbol }}
+          </div>
+          <div>
+            {{ mention.num_mentions }}
+          </div>
+        </div>
+      </nb-list-item>
+    </nb-list>
+  </nb-card-body>
+</nb-card>

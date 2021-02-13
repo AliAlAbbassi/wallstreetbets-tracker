@@ -1,0 +1,26 @@
+nb-card {
+      max-width: 15rem; 
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+ nb-list-item{
+    justify-content: center;
+}
+
+nb-card-header {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+nb-card-body {
+    padding: 0;
+}
